@@ -11,10 +11,12 @@ export class HomeComponent {
   constructor(private render:Renderer2){
 
   }
+  
 getData(){
 let elementlist = this.render.createElement("li");
 this.render.addClass(elementlist,"list-group-item");
-elementlist.innerText=this.imie?.nativeElement.value;
+let czas = new Date().toLocaleTimeString()
+elementlist.innerHTML=`${this.imie?.nativeElement.value}<br>${czas}`;
 this.render.appendChild(this.lista?.nativeElement,elementlist);
 
 }
