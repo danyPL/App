@@ -1,0 +1,58 @@
+header {
+    background-color: white;
+    color: black;
+    padding: 16px 4px;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+nav {
+    background-color: #f3f3f3;
+    clear: both;
+}
+
+    nav .container ul {
+        list-style: none;
+        padding: 0;
+    }
+
+        nav .container ul li {
+            display: inline-flex;
+        }
+
+            nav .container ul li:hover {
+                background-color: black;
+                color: white;
+            }
+
+            nav .container ul li a {
+                text-decoration: none;
+                padding: 14px 16px;
+                color: black;
+            }
+
+                nav .container ul li a:hover {
+                    color: white;
+                }
+
+main, aside {
+    float: left;
+}
+
+main {
+    width: 75%;
+}
+
+aside {
+    width: 25%;
+}
+
+footer {
+    clear: both;
+    background-color: #1e1e1e;
+    color: white;
+    padding: 40px;
+}
